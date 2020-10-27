@@ -1,3 +1,4 @@
+import java.util.Random
 package test;
 
 public class SnakeandLadder {
