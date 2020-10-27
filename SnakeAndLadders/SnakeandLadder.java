@@ -28,7 +28,7 @@ public class SnakeandLadder {
 				//first checking if the current position less then 100// 
 				if(Current_position < Final_position) {
 					
-					Current_position = + Dice_played;
+					Current_position = Current_position + Dice_played;
 					System.out.println("current position: " + Current_position);
 				
 				}
@@ -39,7 +39,7 @@ public class SnakeandLadder {
 				System.out.println("Snake");
 				//checking if the position is less then 0//
 				if(Current_position > 0) {
-					Current_position = - Dice_played;
+					Current_position = Current_position - Dice_played;
 					System.out.println("current position: " + Current_position);
 				}
 				else
