@@ -57,17 +57,21 @@ public class SnakeandLadder {
 	
 	//for player1 to count the number of dice played and to iterate till final position 100 is reached//  
 	public static void Player_position1() {
-		while(Current_position == Final_position)
+		while(Current_position < Final_position)
 		{
 			Check_Option();
 			Count_dice1++;
 			//if current position less then or equals to 0 then count restart//
 			if(Current_position == 0) { 
 				System.out.println("Restart! position less the 0 for playe1");
-				Count_dice1=0;
+				Count_dice1=0;	
 				
 			}
 			
+			if(Current_position == Final_position) {
+				System.out.println("player1 won!");
+				break;
+			}
 		}
 	}
 	//for player2 to count the number of dice played and to iterate till final position 100 is reached//  
@@ -80,7 +84,10 @@ public class SnakeandLadder {
 			if(Current_position == 0) {
 				System.out.println("Restart! position less the 0 for player2");
 				Count_dice2=0;
-				
+			}
+			if(Current_position == Final_position) {
+				System.out.println("player2 won!");
+				break;
 			}
 			
 		}
